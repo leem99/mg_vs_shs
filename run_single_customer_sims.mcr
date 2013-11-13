@@ -1,10 +1,7 @@
-COMMENT : get to demand data folder
-Keyboard : Tab : KeyPress
-Keyboard : Tab : KeyPress
 OPEN FILE : C:\Program Files (x86)\HOMEREnergy\HOMER\HOMER.exe :  : 0
 WAIT FOR : HOMER - [Project1] : appear : 0 : 0
 CLEAR CLIPBOARD
-SET CLIPBOARD : 5 : 0
+SET CLIPBOARD : 1 : 0
 MOVE WINDOW : HOMER - [Project1] : 0 : 1 : 0 : 0 : 0 : 0
 COMMENT : select microgrid components for model
 Mouse : 225 : 82 : Click : 0 : 0 : 0
@@ -300,3 +297,549 @@ WAIT FOR : Sensitivity Values : disappear : 0 : 0
 Mouse : 1044 : 657 : Click : 0 : 0 : 0
 WAIT FOR : Constraints : disappear : 0 : 0
 Mouse : 365 : 90 : Click : 0 : 0 : 0
+DELAY : 300000
+COMMENT : Save Sensitivity Results
+Mouse : 342 : 129 : Click : 0 : 0 : 0
+Mouse : 342 : 129 : Click : 0 : 0 : 0
+Mouse : 1499 : 169 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+TYPE TEXT : sensitivity_results_ug01_
+PASTE
+TYPE TEXT : .csv
+Mouse : 1033 : 588 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 6 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_000.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 5 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_005.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 4 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_010.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 3 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_015.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 2 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_020.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 1 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_050.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+COMMENT : Last MACS no up needed
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save HOMER model
+Mouse : 41 : 34 : Click : 0 : 0 : 0
+REPEAT : 5 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+WAIT FOR : Save As : appear : 0 : 0
+TYPE TEXT : homer_model_optimized_ug01_
+PASTE
+Keyboard : Enter : KeyPress
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : change input data
+COMMENT : change input data
+COMMENT : change input data
+COMMENT : change input data
+COMMENT : change input data
+REPEAT : 11 : 0 : 0 : Enter the number of iterations: : 0 : 0
+INCREMENT CLIPBOARD : 1
+COMMENT : change input demant data
+Mouse : 113 : 125 : Click : 0 : 0 : 0
+WAIT FOR : Primary Load Inputs : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : ug01_
+PASTE
+Mouse : 973 : 285 : Click : 0 : 0 : 0
+Keyboard : Tab : KeyPress
+Keyboard : Space : KeyPress
+Mouse : 835 : 614 : Click : 0 : 0 : 0
+WAIT FOR : Open : appear : 0 : 0
+Keyboard : Tab : KeyPress
+COMMENT : get to mg_shs folder
+Mouse : 727 : 269 : Click : 0 : 0 : 0
+Keyboard : M : KeyPress
+Keyboard : M : KeyPress
+Keyboard : M : KeyPress
+Keyboard : Enter : KeyPress
+Mouse : 690 : 360 : Click : 0 : 0 : 0
+Keyboard : D : KeyPress
+Keyboard : Enter : KeyPress
+Keyboard : Down : KeyPress
+Mouse : 747 : 615 : Click : 0 : 0 : 0
+Keyboard : T : KeyPress
+Keyboard : ShiftLeft : KeyDown
+Keyboard : Tab : KeyPress
+Keyboard : ShiftLeft : KeyUp
+TYPE TEXT : ug01_
+PASTE
+TYPE TEXT : .txt
+Keyboard : Enter : KeyPress
+Mouse : 1155 : 692 : Click : 0 : 0 : 0
+WAIT FOR : Open : disappear : 0 : 0
+Mouse : 1142 : 694 : Click : 0 : 0 : 0
+WAIT FOR : Primary Load Inputs : disappear : 0 : 0
+Mouse : 358 : 88 : Click : 0 : 0 : 0
+DELAY : 300000
+COMMENT : Save Sensitivity Results
+Mouse : 342 : 129 : Click : 0 : 0 : 0
+Mouse : 342 : 129 : Click : 0 : 0 : 0
+Mouse : 1499 : 169 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+TYPE TEXT : sensitivity_results_ug01_
+PASTE
+TYPE TEXT : .csv
+Mouse : 1033 : 588 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 6 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_000.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 5 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_005.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 4 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_010.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 3 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_015.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 2 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_020.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+REPEAT : 1 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Up : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_050.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save Optimization Results
+Mouse : 433 : 129 : Click : 0 : 0 : 0
+COMMENT : Select Max Capacity Shortage
+Mouse : 508 : 175 : Click : 0 : 0 : 0
+COMMENT : Get to end of reliability options list
+REPEAT : 10 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+COMMENT : Last MACS no up needed
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+Mouse : 439 : 248 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : appear : 0 : 0
+Mouse : 838 : 233 : Click : 0 : 0 : 0
+COMMENT : Save As Window For Simulation Results
+Mouse : 772 : 485 : Click : 0 : 0 : 0
+WAIT FOR : Save As : appear : 0 : 0
+Keyboard : Back : KeyPress
+TYPE TEXT : simulation_results_ug01_
+PASTE
+TYPE TEXT : _macs_100.csv
+Mouse : 1031 : 584 : Click : 0 : 0 : 0
+WAIT FOR : Save As : disappear : 0 : 0
+Mouse : 1159 : 698 : Click : 0 : 0 : 0
+WAIT FOR : Simulation Results : disappear : 0 : 0
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : spacer
+COMMENT : Save HOMER model
+Mouse : 41 : 34 : Click : 0 : 0 : 0
+REPEAT : 5 : 0 : 0 : Enter the number of iterations: : 0 : 0
+Keyboard : Down : KeyPress
+ENDREPEAT
+Keyboard : Enter : KeyPress
+WAIT FOR : Save As : appear : 0 : 0
+TYPE TEXT : homer_model_optimized_ug01_
+PASTE
+Keyboard : Enter : KeyPress
+ENDREPEAT
