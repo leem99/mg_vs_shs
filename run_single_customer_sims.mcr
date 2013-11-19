@@ -1,7 +1,7 @@
 OPEN FILE : C:\Program Files (x86)\HOMEREnergy\HOMER\HOMER.exe :  : 0
 WAIT FOR : HOMER - [Project1] : appear : 0 : 0
 CLEAR CLIPBOARD
-SET CLIPBOARD : 1 : 0
+SET CLIPBOARD : 3 : 0
 MOVE WINDOW : HOMER - [Project1] : 0 : 1 : 0 : 0 : 0 : 0
 COMMENT : select microgrid components for model
 Mouse : 225 : 82 : Click : 0 : 0 : 0
